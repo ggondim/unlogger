@@ -1,6 +1,9 @@
 # unlogger-env-console
 A console provider for [Unlogger](https://github.com/NOALVO/unlogger) which conditionally logs based on NODE_ENV variable.
 
+## Levels
+`log`, `trace`, `debug`, `info`, `warn`, `error`
+
 ## Basic usage
 ```
 $ npm i -s @unlogger/core @unlogger/env-console 
