@@ -1,6 +1,6 @@
 {
   "name": "@unlogger/env-console",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A console provider for Unlogger which conditionally logs based on NODE_ENV variable.",
   "keywords": [
     "logger",
