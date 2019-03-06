@@ -1,4 +1,6 @@
 # unlogger
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+
 Unopinionated & provider-oriented logger, with conditional logging, custom formatting and targeted levels control.
 
 The main purpose of unlogger is the ability to create providers that behave as different logging targets. That means you can build your logger to log into a file, or to console, or a database, etc.
@@ -67,3 +69,6 @@ MIT
 
 ## Curiosity
 `unlogger` name comes from the acronym of the words "**un**opinionated" and "**logger**" 😀
+
+## Where are the old providers' repos?
+We recently converted Unlogger to a monorepo with Lerna. You can find the original providers' repos under `/packages` folder. The packages are still published with their original names under the `@unlogger` scope. 
