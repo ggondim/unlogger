@@ -35,7 +35,7 @@ logger.error({ an: 'object' }, { a: 'context required by your provider' });
 ```
 
 #### Default levels
-Unlogger defaults to three logging levels (`log`, `warn` and `error`), but it depends on the providers you are using. Some providers can extend the logging levels, like the [@unlogger/env-console](https://github.com/NOALVO/unlogger/packages/env-console) provider.
+Unlogger defaults to three logging levels (`log`, `warn` and `error`), but it depends on the providers you are using. Some providers can extend the logging levels, like the [@unlogger/env-console](https://github.com/NOALVO/unlogger/tree/master/packages/env-console) provider.
 
 If you want to customize these levels, see [Customizing levels](https://github.com/NOALVO/unlogger/tree/master/packages/core/docs/customizing-levels.md).
 
@@ -50,7 +50,7 @@ await logger.addProviderAsync(asyncProvider, { required: 'options here' });
 
 ### Officially distributed providers
 We built some providers ourselves but you can find other community providers at the `@unlogger` scope in npm.
-- [@unlogger/env-console](https://github.com/NOALVO/unlogger/packages/env-console/README.md): a provider to log using `console` conditionally to `NODE_ENV`. 
+- [@unlogger/env-console](https://github.com/NOALVO/unlogger/tree/master/packages/env-console): a provider to log using `console` conditionally to `NODE_ENV`. 
 - [@unlogger/bugsnag](https://github.com/NOALVO/unlogger-bugsnag): a provider that uses [Bugsnag](https://www.bugsnag.com/) as logger. 
 
 ### Community-built providers

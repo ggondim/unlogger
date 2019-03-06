@@ -18,6 +18,6 @@ logger.withContext({
 That way, all the log functions called by unlogger will use the default context.
 
 ### Context override
-If you both set a global context and specify a [context argument](#Arguments) when calling a log method, the two objects will be merged, giving preference to the context argument.
+If you both set a global context and specify a [context argument](https://github.com/NOALVO/unlogger/tree/master/packages/core#Arguments) when calling a log method, the two objects will be merged, giving preference to the context argument.
 
 This means the **global context properties will be overriden if the same properties are present in the context argument**. 

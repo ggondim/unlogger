@@ -8,12 +8,12 @@
     "logging"
   ],
   "author": "Gustavo Gondim <gustavo@midianoalvo.com.br>",
-  "homepage": "https://github.com/NOALVO/unlogger/packages/env-console/README.md",
+  "homepage": "https://github.com/NOALVO/unlogger/tree/master/packages/env-console",
   "bugs": {
     "url": "https://github.com/NOALVO/unlogger/issues"
   },
   "license": "MIT",
-  "main": "lib/env-console.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
