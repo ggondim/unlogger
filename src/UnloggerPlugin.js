@@ -1,12 +1,11 @@
 class UnloggerPlugin {
-  constructor({ pluginName, levels, logFunction }) {
+  constructor(pluginName) {
     this.name = pluginName;
-    this.format = (logContext) => {};
-    this.evaluate = (logContext) => {};
     this.levels = [];
   }
 
   initializeLevels(levels, self) {
+    this.levels = levels;
     levels.forEach((level) => {
       self[level] = self.log.bind(self);
     });

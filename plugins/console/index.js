@@ -1,8 +1,8 @@
-const { UnloggerPlugin } = require('unlogger');
+const UnloggerPlugin = require('../../src/UnloggerPlugin');
 
 class ConsolePlugin extends UnloggerPlugin {
   constructor(cons = console) {
-    const levels = ['warn', 'error', 'info'];
+    const levels = ['log', 'warn', 'error', 'info'];
     super('console');
     super.initializeLevels(levels, this);
     this.console = cons;
@@ -20,7 +20,7 @@ class ConsolePlugin extends UnloggerPlugin {
     if (typeof toLog === 'object' && toLog instanceof Error) {
       const newObject = {
         message: toLog.toString(),
-        error: JSON.stringify()
+        error: JSON.stringify(toLog),
       };
       formatted = JSON.stringify(newObject);
     } else if (typeof toLog === 'object') {
