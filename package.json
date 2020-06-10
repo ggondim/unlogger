@@ -1,8 +1,8 @@
 {
-  "name": "unlogger-lerna",
+  "name": "unlogger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.13.1",
-    "mocha": "^6.0.2"
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "husky": "^3.0.2"
   }
 }
